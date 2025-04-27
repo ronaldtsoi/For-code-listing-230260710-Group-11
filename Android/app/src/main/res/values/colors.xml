@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="dark_blue">#00008B</color>
+    <color name="purple">#6200EE</color>
+    <color name="leave_home_safe">#17BD8B</color>
+    <color name="dark_grey">#4D4D4D</color>
+    <color name="text_shadow">#7F000000</color>
+    <color name="yellow">#FFEB3B</color>
+    <color name="amber">#FFDC65</color>
+    <color name="pink">#EA71A8</color>
+    <color name="light_blue">#00ACEC</color>
+    <color name="green">#75B300</color>
+    <color name="button1">#8B17BD</color>
+    <color name="button2">#333333</color>
+    <color name="button3">#1B5E20</color>
+</resources>

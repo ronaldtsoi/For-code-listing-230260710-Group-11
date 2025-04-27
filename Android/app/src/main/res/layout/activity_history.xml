@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/leave_home_safe"
+    android:padding="16dp">
+
+
+    <EditText
+        android:id="@+id/et_filter_worksite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Filter by worksite name"
+        android:inputType="text"
+        android:imeOptions="actionDone" />
+
+    <EditText
+        android:id="@+id/et_filter_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Filter by date (YYYY-MM-DD)"
+        android:focusable="false"
+        android:clickable="true"
+        android:inputType="none"
+        android:drawableEnd="@android:drawable/ic_menu_today"
+        android:padding="10dp"
+        android:layout_marginTop="8dp" />
+
+    <LinearLayout
+        android:id="@+id/layout_filter_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Back"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/style_button_check_in"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_apply_filters"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Search"
+            android:background="@drawable/style_button_check_in"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"            />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_checkin_history"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="12dp" />
+
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WarmUpActivity">
+    <LinearLayout
+        android:id="@+id/backBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="@color/purple"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/ic_back"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="8dp"
+            android:text="Warm-up"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/txtTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click the button to start timing"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            tools:layout_editor_absoluteX="70dp"
+            tools:layout_editor_absoluteY="405dp" />
+
+        <ImageView
+            android:id="@+id/imgWarmUpPose"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Warm-up Pose"
+            android:src="@drawable/warm_up_pose1"
+            app:layout_constraintEnd_toEndOf="@+id/txtTimer"
+            app:layout_constraintStart_toStartOf="@+id/txtTimer"
+            app:layout_constraintTop_toBottomOf="@+id/txtTimer" />
+
+        <TextView
+            android:id="@+id/txtPoseDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stand straight and stretch your arms upward."
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/imgWarmUpPose"
+            app:layout_constraintStart_toStartOf="@+id/imgWarmUpPose"
+            app:layout_constraintTop_toBottomOf="@+id/imgWarmUpPose"/>
+
+        <Button
+            android:id="@+id/btnComplete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Start"
+            app:layout_constraintEnd_toEndOf="@+id/txtPoseDescription"
+            app:layout_constraintStart_toStartOf="@+id/txtPoseDescription"
+            app:layout_constraintTop_toBottomOf="@+id/txtPoseDescription" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
